@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Pertama</title>
+</head>
+<body>
+  <h1>Halo</h1>
+  <p>Negro biadab.</p>
+</body>
+</html>
+</button oneclick="alert('Tombol diklik!')">Click Me</button>
+<body>
+  <p>Belajar web susah bet njing.</p>
+  <button onclick="alert('Tolol!')">Click Me For Free Money</button>
+</body>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: darkred;
+  }
+</style>
+<body>
+
+  <h1>Game Klik</h1>
+  <h2 id="angka">0</h2>
+  <p id="status"></p>
+
+  <button onclick="tambah()">Tambah</button>
+
+  <script>
+    let nilai = 0;
+
+    function tambah() {
+      nilai++;
+      document.getElementById("angka").innerText = nilai;
+
+      if (nilai == 10) {
+        document.getElementById("status").innerText = "El Pemanasan!";
+      }
+    }
+  </script>
+
+</body>
